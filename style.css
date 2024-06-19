@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  line-height: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calculator {
+  width: 450px;
+  height: 460px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.display {
+  padding: 10px;
+  font-size: 2rem;
+  width: 100%;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  background-color: rgb(200, 11, 218);
+}
+
+.cal-btns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cal-btns button {
+  height: 50px;
+  width: 120px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(200, 11, 218);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#equals {
+  width: 267px;
+}
+
+@meida (max-width:768px) {
+  .calculator {
+    width: 98%;
+  }
+}
